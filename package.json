@@ -1,0 +1,27 @@
+{
+  "name": "react-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anbykova/react-example.git"
+  },
+  "author": "anbykova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anbykova/react-example/issues"
+  },
+  "homepage": "https://github.com/anbykova/react-example#readme",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.17"
+  }
+}
