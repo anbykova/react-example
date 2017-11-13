@@ -17,7 +17,6 @@ module.exports = {
                 template: 'public/index.html'
             }),
             new webpack.HotModuleReplacementPlugin(),
-            new webpack.NoErrorsPlugin(),
             devFlagPlugin
     ],
 	module: {

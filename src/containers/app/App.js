@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import photo1 from '../../images/1.jpg';
 import './App.scss';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as menuActions from '../../actions/menuActions';
 
 class App extends Component {
 
@@ -13,21 +16,24 @@ class App extends Component {
   }
 
   showMenu() {
-    this.setState({
-      isMenuOpen: true
-    })
+    console.log(this.props);
+    this.props.menuActions.openMenu();
+    // this.setState({
+    //   isMenuOpen: true
+    // })
   }
 
   hideMenu() {
-    this.setState({
-      isMenuOpen: false
-    })
+    this.props.menuActions.closeMenu();
+    // this.setState({
+    //   isMenuOpen: false
+    // })
   }
 
   render() {
     return (
       <div className="App">
-        <div className= { 'App-menu ' + (this.state.isMenuOpen ? 'App-menu-open' : '')}>
+        <div className= { 'App-menu ' + (this.props.isMenuOpen ? 'App-menu-open' : '')}>
           <div className="menu-wrapper">
             <div className="menu-container">
               <div>
@@ -59,23 +65,15 @@ class App extends Component {
       </div>
     );
   }
-
-  mapStateToProps = (state) => {
-    return state.play;
-  };
-
-  mapDispatchToProps = (dispatch) => {
-      return {
-          togglePlay: () => {
-              dispatch(togglePlay());
-          }
-      }
-  };
-
-  AppContainer = connect(
-      mapStateToProps,
-      mapDispatchToProps
-  )(App);
 }
 
-export default App;
+export default connect(
+  (state) => {
+    return {isMenuOpen: state.isMenuOpen};
+  },
+  (dispatch) => {
+    return {
+      menuActions: bindActionCreators(menuActions, dispatch)
+    }
+  }
+)(App);;
