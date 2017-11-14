@@ -5,7 +5,7 @@ const menu = (state = { isMenuOpen: false, section: '' }, action) => {
     case MENU_OPEN:
       return Object.assign({}, state, { isMenuOpen: true });
     case MENU_CLOSE:
-      return Object.assign({}, state, { isMenuOpen: true });
+      return Object.assign({}, state, { isMenuOpen: false });
     case MENU_CHOOSE_SECTION:
       return Object.assign({}, state, { section: action.payload });
     default:

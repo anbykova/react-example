@@ -5,52 +5,32 @@ import './App.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as menuActions from '../../actions/menuActions';
+import Menu from '../menu/Menu';
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      isMenuOpen: false
-    }
   }
 
   showMenu() {
-    console.log(this.props);
-    this.props.menuActions.openMenu();
-    // this.setState({
-    //   isMenuOpen: true
-    // })
+    this.props.openMenu();
   }
 
   hideMenu() {
-    this.props.menuActions.closeMenu();
-    // this.setState({
-    //   isMenuOpen: false
-    // })
+    this.props.closeMenu();
   }
 
   render() {
     return (
       <div className="App">
-        <div className= { 'App-menu ' + (this.props.isMenuOpen ? 'App-menu-open' : '')}>
-          <div className="menu-wrapper">
-            <div className="menu-container">
-              <div>
-              </div>
-              <div className="header-menu App-title"
-                  onClick={this.hideMenu.bind(this)}>
-                Close
-              </div>
-            </div>
-          </div>
-        </div>
+        <Menu close={this.hideMenu.bind(this)} isMenuOpen={this.props.isMenuOpen}/>
         <header className="App-header">
           <div className="header-container">
             <div className="App-title">
-              Savchuk family
+              Just Nastya
             </div>
-            <div className="header-menu App-title"
+            <div className="header-menu-action App-title"
                  onClick={this.showMenu.bind(this)}>
               Menu
             </div>
@@ -69,11 +49,12 @@ class App extends Component {
 
 export default connect(
   (state) => {
-    return {isMenuOpen: state.isMenuOpen};
+    return {isMenuOpen: state.menu.isMenuOpen};
   },
   (dispatch) => {
     return {
-      menuActions: bindActionCreators(menuActions, dispatch)
+      openMenu: bindActionCreators(menuActions.openMenu, dispatch),
+      closeMenu: bindActionCreators(menuActions.closeMenu, dispatch),
     }
   }
-)(App);;
+)(App);
