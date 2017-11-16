@@ -1,7 +1,7 @@
 .App-menu {
     z-index: 1000;
     position: fixed;
-    top: -100vh;
+    top: -200vh;
     height: 100vh;
     width: 100%;
     background-color: #22110e;
@@ -27,10 +27,14 @@
         justify-content: center;
         .menu-item {
             padding: 20px;
-            font-size: 2.5em;
-            cursor: pointer;
-            &:hover {
-                text-shadow: 3px 2px 8px grey;
+            font-size: 2.5em;  
+            .item-title {
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover {
+                    text-shadow: 3px 2px 8px grey;
+                }
             }
         }
     }

@@ -4,10 +4,11 @@ import './App.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as menuActions from '../../actions/menuActions';
-import Menu from '../menu/Menu';
-import { Route, Switch, NavLink } from 'react-router-dom'
+import Menu from '../../components/menu/Menu';
+import { Route, Switch, NavLink, withRouter } from 'react-router-dom'
 import Home from '../home/Home';
 import About from '../about/About';
+import Photos from '../photos/Photos';
 
 class App extends Component {
 
@@ -26,11 +27,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Menu close={this.hideMenu.bind(this)} isMenuOpen={this.props.isMenuOpen}/>
+        {Menu ({close:this.hideMenu.bind(this), isMenuOpen:this.props.isMenuOpen})}
         <header className="App-header">
           <div className="header-container">
             <div className="App-title">
-              <NavLink to='/'>Just Nastya</NavLink>
+              <NavLink to='/' className="App-name">B and S</NavLink>
             </div>
             <div className="header-menu-action App-title"
                  onClick={this.showMenu.bind(this)}>
@@ -41,7 +42,8 @@ class App extends Component {
         <main>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path='/about' exact component={About} />
+            <Route path='/about' component={About} />
+            <Route path='/photos' component={Photos} />
           </Switch>
         </main>
         <footer>
@@ -52,7 +54,7 @@ class App extends Component {
   }
 }
 
-export default connect(
+export default withRouter(connect(
   (state) => {
     return {isMenuOpen: state.menu.isMenuOpen};
   },
@@ -62,4 +64,4 @@ export default connect(
       closeMenu: bindActionCreators(menuActions.closeMenu, dispatch),
     }
   }
-)(App);
+)(App));
