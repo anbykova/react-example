@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './menu.scss';
+import { NavLink } from 'react-router-dom'
 
 class Menu extends Component {
 
@@ -21,17 +22,17 @@ class Menu extends Component {
                 Close
             </div>
           </div>
-          <div className="menu-container">
+          <nav className="menu-container">
             <div className="menu-item">
               Photos
             </div>
             <div className="menu-item">
-              About us
+                <NavLink to='/about' exact onClick={this.hideMenu.bind(this)}>About</NavLink>
             </div>
             <div className="menu-item">
               Contact
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     );

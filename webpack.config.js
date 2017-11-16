@@ -38,7 +38,8 @@ module.exports = {
 		inline: true,
         contentBase:'./',
         hot: true,
-		port:3001
+        port:3001,
+        historyApiFallback: true,
     },
 	resolve: {    
         alias: {
