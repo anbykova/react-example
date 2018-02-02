@@ -1,0 +1,33 @@
+.article {
+    display: flex;
+    padding: 10px;
+
+    .article-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-title {
+        display: flex;
+        margin-bottom: 2px;
+    }
+    
+    .article-author {
+        display: flex;
+        margin-bottom: 2px;
+    }
+    
+    .article-text {
+        width: 80px;
+        text-align: left;
+    }
+
+    .article-photo-container {
+        padding: 6px;
+    }
+
+    .article-photo {
+        width: 40px;
+        border: 1px solid white;
+    }
+}

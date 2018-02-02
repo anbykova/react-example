@@ -4,10 +4,10 @@ import './App.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as menuActions from '../../actions/menuActions';
-import Menu from '../../components/menu/Menu';
+import Menu from '../menu/Menu';
 import { Route, Switch, NavLink, withRouter } from 'react-router-dom'
 import Home from '../home/Home';
-import About from '../about/About';
+import News from '../news/News';
 import Photos from '../photos/Photos';
 
 class App extends Component {
@@ -26,23 +26,23 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        {Menu ({close:this.hideMenu.bind(this), isMenuOpen:this.props.isMenuOpen})}
-        <header className="App-header">
+      <div className="app">
+        { Menu ({close : this.hideMenu.bind(this), isMenuOpen : this.props.isMenuOpen}) }
+        <header className="header">
           <div className="header-container">
-            <div className="App-title">
-              <NavLink to='/' className="App-name">B and S</NavLink>
+            <div className="app-action">
+              <NavLink to='/' className="app-name">B and S</NavLink>
             </div>
-            <div className="header-menu-action App-title"
+            <a className="app-action"
                  onClick={this.showMenu.bind(this)}>
               Menu
-            </div>
+            </a>
           </div>
         </header>
-        <main>
+        <main className="app-content">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path='/about' component={About} />
+            <Route path='/news' component={News} />
             <Route path='/photos' component={Photos} />
           </Switch>
         </main>

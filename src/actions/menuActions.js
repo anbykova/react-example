@@ -15,6 +15,6 @@ export function closeMenu() {
 export function changeSection(section) {
   return {
     type: types.MENU_CHOOSE_SECTION,
-    section
+    payload: section
   };
 }

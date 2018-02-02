@@ -4,29 +4,29 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = (props) => {
   return (
-    <div className= { 'App-menu ' + (props.isMenuOpen ? 'App-menu-open' : '')}>
+    <div className= { 'menu ' + (props.isMenuOpen ? 'menu--cond_opened' : 'menu--cond_closed')}>
       <div className="menu-wrapper">
         <div className="menu-header">
-          <div className="menu-action App-title"
+          <div className="menu-action app-action"
                 onClick={props.close}>
               Close
           </div>
         </div>
         <nav className="menu-container">
           <div className="menu-item">
-              <NavLink to='/photos' className="item-title" exact onClick={props.close}>Photos</NavLink>
+              <NavLink to='/photos' className="menu-title" exact onClick={props.close}>Photos</NavLink>
           </div>
           <div className="menu-item">
-              <NavLink to='/about' className="item-title" exact onClick={props.close}>About</NavLink>
+              <NavLink to='/news' className="menu-title" exact onClick={props.close}>News</NavLink>
           </div>
           <div className="menu-item">
-              <NavLink to='/contact' className="item-title" exact onClick={props.close}>Contact</NavLink>
+              <NavLink to='/contact' className="menu-title" exact onClick={props.close}>Contact</NavLink>
           </div>
         </nav>
       </div>
     </div>
   );
 }
-export default Menu
+export default Menu;
 
 

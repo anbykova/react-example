@@ -2,33 +2,31 @@ body {
   background-color: #22110e;
 }
 
-.App {
+.app {
   text-align: center;
   background-color: #22110e;
-  .App-name {
+
+  .app-name {
     text-decoration: none;
     color: white;
   }
 
-  .App-title {
-    font-size: 1.5em;
-  }
-
-  .App-photo {
+  .app-photo {
     width: 100%;
   }
-  
-  .App-intro {
-    font-size: large;
-  }
 
-  .App-logo {
+  .app-logo {
     animation: App-logo-spin infinite 20s linear;
     height: 80px;
   }
+  .app-action {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
 }
 
-.App-header {
+.header {
   background-color: #22110e;
   position: absolute;
   width: 100%;
@@ -39,10 +37,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .header-menu-action {
-    text-decoration: underline;
-    cursor: pointer;
   }
 }
 
