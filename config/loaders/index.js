@@ -4,5 +4,6 @@ var lessLoader = require('./less-loader.js');
 var sassLoader = require('./sass-loader.js');
 var imageLoader = require('./image-loader.js');
 var htmlLoader = require('./html-loader.js');
+var graphqlLoader = require('./graphql-loader.js');
 
-module.exports = {babelLoader,jsonLoader,lessLoader,sassLoader,imageLoader, htmlLoader};
+module.exports = {babelLoader,jsonLoader,lessLoader,sassLoader,imageLoader, htmlLoader, graphqlLoader};

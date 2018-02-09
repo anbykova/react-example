@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import menu from './menuReducer';
-import news from './newsReducer';
+import articles from './articlesReducer';
+import authors from './authorsReducer';
 
-const rootReducer = combineReducers({ menu, news });
+const rootReducer = combineReducers({ articles, authors });
 
 export default rootReducer;

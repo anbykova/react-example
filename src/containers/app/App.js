@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import './App.scss';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as menuActions from '../../actions/menuActions';
 import Menu from '../menu/Menu';
 import { Route, Switch, NavLink, withRouter } from 'react-router-dom'
 import Home from '../home/Home';
-import News from '../news/News';
+import Articles from '../articles/Articles';
 import Photos from '../photos/Photos';
+import Authors from '../authors/Authors';
 
 class App extends Component {
 
@@ -17,24 +17,32 @@ class App extends Component {
   }
 
   showMenu() {
-    this.props.openMenu();
+    this.setState(
+      {
+        isMenuOpen: true
+      }
+    );
   }
 
   hideMenu() {
-    this.props.closeMenu();
+    this.setState(
+      {
+        isMenuOpen: false
+      }
+    );
   }
 
   render() {
     return (
       <div className="app">
-        { Menu ({close : this.hideMenu.bind(this), isMenuOpen : this.props.isMenuOpen}) }
+        <Menu close={this.hideMenu.bind(this)} isMenuOpen={this.state && this.state.isMenuOpen}/>
         <header className="header">
           <div className="header-container">
             <div className="app-action">
               <NavLink to='/' className="app-name">B and S</NavLink>
             </div>
             <a className="app-action"
-                 onClick={this.showMenu.bind(this)}>
+              onClick={this.showMenu.bind(this)}>
               Menu
             </a>
           </div>
@@ -42,8 +50,9 @@ class App extends Component {
         <main className="app-content">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path='/news' component={News} />
+            <Route path='/articles' component={Articles} />
             <Route path='/photos' component={Photos} />
+            <Route path='/authors' component={Authors} />
           </Switch>
         </main>
         <footer>
@@ -54,14 +63,4 @@ class App extends Component {
   }
 }
 
-export default withRouter(connect(
-  (state) => {
-    return {isMenuOpen: state.menu.isMenuOpen};
-  },
-  (dispatch) => {
-    return {
-      openMenu: bindActionCreators(menuActions.openMenu, dispatch),
-      closeMenu: bindActionCreators(menuActions.closeMenu, dispatch),
-    }
-  }
-)(App));
+export default withRouter(App);

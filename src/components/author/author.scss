@@ -1,0 +1,33 @@
+.author {
+  display: flex;
+  padding: 10px;
+
+  .author-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .author-title {
+    display: flex;
+    margin-bottom: 2px;
+  }
+
+  .author-author {
+    display: flex;
+    margin-bottom: 2px;
+  }
+
+  .author-text {
+    width: 80px;
+    text-align: left;
+  }
+
+  .author-photo-container {
+    padding: 6px;
+  }
+
+  .author-photo {
+    width: 40px;
+    border: 1px solid white;
+  }
+}

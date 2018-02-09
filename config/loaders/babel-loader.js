@@ -5,7 +5,7 @@ module.exports = {
 				loader:'babel-loader',
 				include: path.join(__dirname, '..', '..', 'src'),
 				query:{
-					presets: ["es2015", "react"],
+					presets: ["es2015", "stage-0", "react"],
 					plugins: ["react-hot-loader/babel",
 							//   'react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'
 							 ],

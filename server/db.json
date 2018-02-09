@@ -1,0 +1,114 @@
+{
+  "authors": [
+    {
+      "id": "545",
+      "username": "alex",
+      "firstName": "Alex"
+    },
+    {
+      "firstName": "John",
+      "username": "john",
+      "id": "GXd7rOO"
+    },
+    {
+      "firstName": "Sophia",
+      "username": "sophia",
+      "id": "563Bucc"
+    },
+    {
+      "firstName": "Eveline",
+      "username": "eveline",
+      "id": "tTxIiJQ"
+    },
+    {
+      "firstName": "Katya",
+      "username": "katya",
+      "id": "nZeJURa"
+    }
+  ],
+  "articles": [
+    {
+      "id": "2",
+      "authorId": "563Bucc",
+      "title": "ecmascript 6",
+      "imageURL": "https://static.beeline.ru/upload/images/banners/mainBannerStubDesktop.jpg",
+      "description": "Semper risus in hendrerit gravida rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada. Donec adipiscing tristique risus nec feugiat. Elementum sagittis vitae et leo duis ut. Condimentum vitae sapien pellentesque habitant. Nunc mattis enim ut tellus elementum sagittis vitae et leo. Sit amet mattis vulputate enim nulla. Blandit cursus risus at ultrices mi tempus imperdiet nulla. In arcu cursus euismod quis viverra nibh. Dui ut ornare lectus sit amet est placerat in. In egestas erat imperdiet sed euismod nisi porta lorem. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Eu sem integer vitae justo eget magna. Lectus nulla at volutpat diam ut venenatis tellus. Consequat mauris nunc congue nisi.\n Sed turpis tincidunt id aliquet risus feugiat. Amet est placerat in egestas erat imperdiet. Maecenas sed enim ut sem viverra aliquet. Fames ac turpis egestas integer eget aliquet nibh. Nunc vel risus commodo viverra maecenas. Aliquet lectus proin nibh nisl condimentum id venenatis. Non sodales neque sodales ut. Nec nam aliquam sem et tortor consequat id porta nibh. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Lorem sed risus ultricies tristique nulla. Morbi tincidunt augue interdum velit. Ac tincidunt vitae semper quis lectus nulla at. Sed turpis tincidunt id aliquet risus. Massa vitae tortor condimentum lacinia quis vel eros donec. Urna nunc id cursus metus aliquam."
+    },
+    {
+      "id": "3",
+      "authorId": "563Bucc",
+      "title": "What is new in angular5",
+      "description": "Sit amet nisl purus in mollis nunc sed id. In est ante in nibh mauris cursus mattis. Et odio pellentesque diam volutpat. Porttitor lacus luctus accumsan tortor. Integer malesuada nunc vel risus. Mattis enim ut tellus elementum. Ut diam quam nulla porttitor massa id neque. A lacus vestibulum sed arcu non odio euismod lacinia. Dictum non consectetur a erat nam at lectus urna. Et pharetra pharetra massa massa ultricies mi. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu."
+    },
+    {
+      "id": "4",
+      "authorId": "545",
+      "title": "ecmascript 5",
+      "imageURL": "https://static.beeline.ru/upload/images/b2c/backgrounds/trusted-payment-background.jpg"
+    },
+    {
+      "id": "5",
+      "authorId": "563Bucc",
+      "title": "What is new in angular4"
+    },
+    {
+      "id": "6",
+      "authorId": "563Bucc",
+      "title": "ecmascript 6"
+    },
+    {
+      "id": "7",
+      "authorId": "563Bucc",
+      "title": "What is new in angular5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis enim lobortis. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Vel turpis nunc eget lorem dolor sed viverra ipsum. Consequat mauris nunc congue nisi vitae suscipit tellus mauris. Est sit amet facilisis magna etiam. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Elit scelerisque mauris pellentesque pulvinar. Nulla porttitor massa id neque aliquam vestibulum morbi. Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus.\n Egestas integer eget aliquet nibh praesent tristique magna. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Morbi enim nunc faucibus a. Sed blandit libero volutpat sed cras ornare arcu dui. Massa massa ultricies mi quis hendrerit dolor magna eget. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Risus ultricies tristique nulla aliquet enim tortor at. Vestibulum lectus mauris ultrices eros in. Vel pretium lectus quam id. Accumsan lacus vel facilisis volutpat est velit. Ac turpis egestas integer eget aliquet nibh praesent tristique. Velit ut tortor pretium viverra suspendisse.\n Amet dictum sit amet justo donec enim. Nam libero justo laoreet sit amet. Est pellentesque elit ullamcorper dignissim. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus. Ultrices sagittis orci a scelerisque purus semper eget duis at. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Eu lobortis elementum nibh tellus molestie. Egestas purus viverra accumsan in nisl. Ac tortor dignissim convallis aenean et tortor. Integer quis auctor elit sed vulputate mi. Ultrices gravida dictum fusce ut. Duis ultricies lacus sed turpis tincidunt. Penatibus et magnis dis parturient. Quis varius quam quisque id diam vel quam. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Morbi quis commodo odio aenean sed. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi.\n"
+    },
+    {
+      "id": "8",
+      "authorId": "tTxIiJQ",
+      "title": "Why typescript",
+      "imageURL": "https://picsum.photos/300/200/?random"
+    },
+    {
+      "id": "9",
+      "authorId": "nZeJURa",
+      "title": "What is new in react 16",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "title": "Sun Mar 04 2018 01:13:06 GMT+0400 (SAMT)",
+      "description": "description",
+      "authorId": "563Bucc",
+      "imageURL": "https://picsum.photos/300/200/?random",
+      "id": "2ZXq_V_"
+    },
+    {
+      "title": "Sun Mar 04 2018 01:13:21 GMT+0400 (SAMT)",
+      "description": "description",
+      "authorId": "563Bucc",
+      "id": "xi~nKnv"
+    },
+    {
+      "title": "Sun Mar 04 2018 01:13:42 GMT+0400 (SAMT)",
+      "description": "description",
+      "authorId": "563Bucc",
+      "id": "eb_CfCU"
+    },
+    {
+      "title": "Thu Mar 08 2018 00:05:20 GMT+0400 (SAMT)",
+      "description": "description",
+      "authorId": "563Bucc",
+      "id": "Altm3wn"
+    },
+    {
+      "title": "efef",
+      "authorId": "563Bucc",
+      "id": "dWpPYI2"
+    },
+    {
+      "title": "es5",
+      "description": "everything about es5",
+      "authorId": "563Bucc",
+      "id": "HTYLTL0"
+    }
+  ]
+}

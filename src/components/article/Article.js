@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
 import './article.scss';
+import { Card, Button, CardTitle, CardText, CardBody, CardImg } from 'reactstrap';
 
-const Article = (props) => {
+class Article extends Component {
+
+  constructor(props) {
+    super(props);
+    this.handleImageLoaded = this.handleImageLoaded.bind(this);
+  }
+
+  handleImageLoaded() {
+    this.setState(
+      {
+        isImageLoaded: true
+      }
+    );
+  }
+
+  render() {
     return (
-        <div key={props.url} className="article">
-            <div className="article-photo-container">
-                <img className="article-photo" src={props.urlToImage}></img>
-            </div>
-            <div className="article-main">
-                <div className="article-author">
-                    <div className="article-text">
-                        Author
-                    </div>
-                    <div className="article-content">
-                        {props.author}
-                    </div>
-                </div>
-                <div className="article-title">
-                    <div className="article-text">
-                        Title
-                    </div>
-                    <div className="article-content">
-                        {props.title}
-                    </div>
-                </div>
-            </div>
-        </div>
+      <Card className="article">
+        {this.props.imageURL && <CardImg top src={this.props.imageURL} className={"article-image" + (this.state && this.state.isImageLoaded ? " article-image--loaded" : "")} onLoad={this.handleImageLoaded} alt="Card image" />}
+        <CardBody>
+          <CardTitle>{this.props.title}</CardTitle>
+          <CardText>{this.props.description && this.props.description.slice(0, 100)}</CardText>
+          <Button className="article-action_more">View More</Button>
+        </CardBody>
+      </Card>
     )
+  }
 }
 
 export default Article;

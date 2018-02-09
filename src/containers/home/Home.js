@@ -34,13 +34,13 @@ class Home extends Component {
 
   render() {
     return (
-        <div onClick={this.checkClickOnModal}>
-          <img src={photo1} className="app-photo" alt="logo" />
-          <button onClick={this.showModal} className="warning">
-            Show Warning
+      <div onClick={this.checkClickOnModal}>
+        <img src={photo1} className="app-photo" alt="logo" />
+        <button onClick={this.showModal} className="warning">
+          Show Warning
           </button>
-          {(this.state && this.state.isModalShowing) && <ModalWindow closeModal={this.closeModal}></ModalWindow>}
-        </div>
+        {(this.state && this.state.isModalShowing) && <ModalWindow closeModal={this.closeModal}></ModalWindow>}
+      </div>
     );
   }
 }
