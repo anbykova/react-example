@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import DevTools from '../devTools/DevTools';
 import App from '../containers/app/App';
-import { BrowserRouter, browserHistory } from 'react-router-dom'
+import { ApolloProvider } from 'react-apollo';
+import { BrowserRouter, browserHistory } from 'react-router-dom';
+import client from '../apollo';
 
 export default class Root extends Component {
   returnApp() {
@@ -25,7 +27,9 @@ export default class Root extends Component {
     const { store } = this.props;
     return (
       <Provider store={store}>
-        {this.returnApp()}
+        <ApolloProvider client={client}>
+          {this.returnApp()}
+        </ApolloProvider>
       </Provider>
     );
   }

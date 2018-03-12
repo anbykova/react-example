@@ -1,33 +1,50 @@
+@import '../../scss/_variables.scss';
+
 .article {
+  display: flex;
+  padding: 10px;
+  background-color: $light-brown-color;
+
+  .article-image {
+    width: 0%;
+    transition: width 5s;
+  }
+
+  .article-image--loaded {
+    width: 100%;
+  }
+
+  .article-action_more {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .article-main {
     display: flex;
-    padding: 10px;
+    flex-direction: column;
+  }
 
-    .article-main {
-        display: flex;
-        flex-direction: column;
-    }
+  .article-title {
+    display: flex;
+    margin-bottom: 2px;
+  }
 
-    .article-title {
-        display: flex;
-        margin-bottom: 2px;
-    }
-    
-    .article-author {
-        display: flex;
-        margin-bottom: 2px;
-    }
-    
-    .article-text {
-        width: 80px;
-        text-align: left;
-    }
+  .article-author {
+    display: flex;
+    margin-bottom: 2px;
+  }
 
-    .article-photo-container {
-        padding: 6px;
-    }
+  .article-text {
+    width: 80px;
+    text-align: left;
+  }
 
-    .article-photo {
-        width: 40px;
-        border: 1px solid white;
-    }
+  .article-photo-container {
+    padding: 6px;
+  }
+
+  .article-photo {
+    width: 40px;
+    border: 1px solid white;
+  }
 }
